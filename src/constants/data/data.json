@@ -1,0 +1,54 @@
+{
+  "devInfo": {
+    "name": "Manuel Hernando Gonzalez",
+    "jobTitle": "Experto en instalacion y mantenimiento",
+    "image": "https://drive.google.com/file/d/1ZHc2aCyznCrx0eHRBz1IwOiyeQNoj-e4/preview",
+    "introduction": "¡Bienvenido a Multiser y Aires AC! Somos expertos en instalación, mantenimiento y reparación de aires acondicionados, comprometidos con ofrecerte un servicio de calidad, rápido y eficiente.\n\nExplora nuestro portafolio para ver trabajos recientes y confía en nosotros para mantener tu hogar u oficina fresco y cómodo todo el año.",
+    "city": "Ibague, Tolima",
+    "degree": "Tecnico reparador e instalador de aire acondicionado"
+  },
+  "links": {
+    "facebook": "#",
+    "whatsapp": "https://wa.me/3042549815?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20proyectos.%20%C2%BFPodr%C3%ADas%20enviarme%20m%C3%A1s%20detalles%3F",
+    "instagram": "#",
+    "linkedin": "https://www.linkedin.com/in/juan-prieto-44011732a",
+    "cityLink": "https://www.google.com/maps/place/Ibagu%C3%A9,+Tolima/data=!4m2!3m1!1s0x8e38c491115f4d5f:0xe0cae43859d2401e?sa=X&ved=1t:242&ictx=111"
+  },
+
+  "works": {
+    "1": "Aries",
+    "2": "DryWall"
+  },
+
+  "projects": {
+    "01": {
+      "work": "1",
+      "name": "Reparacion 1",
+      "images": [
+        {
+          "src": "https://drive.google.com/file/d/1ceMrQlIq1z0EGl8n01YZkuGb76AhVNd_/preview",
+          "alt": "imagen 01 de ejemplo del proyecto"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1QpyGCWMqdlXFARfoTO9n8yWaWBn7Cg7j/preview",
+          "alt": "imagen 02 de ejemplo del proyecto"
+        },
+        {
+          "src": "https://drive.google.com/file/d/199XL9dEwiEYP51LRsmU-aNXsiH752BCv/preview",
+          "alt": "imagen 03 de ejemplo del proyecto"
+        }
+      ],
+      "media": {
+        "videoUrl": "https://drive.google.com/file/d/1Er8Y1T3IbTEi6HXkPxUJmqFZ9Cs-Jq2m/preview",
+        "liveUrl": "https://www.google.com/maps/place/Ibagu%C3%A9,+Tolima/data=!4m2!3m1!1s0x8e38c491115f4d5f:0xe0cae43859d2401e?sa=X&ved=1t:242&ictx=111"
+      },
+      "description": "lidere el mantenimiento y reistalacion de un sistema de aire acondicionado para un negocio de la ciudad de ibague",
+      "status": "Terminado",
+      "technologies": {
+        "workType": ["mantenimiento", "reparacion", "instalacion"],
+        "brand": ["LG", "Samsung"]
+      },
+      "contact": "3042549815"
+    }
+  }
+}
