@@ -23,7 +23,10 @@ const ProyectsListComponent = () => {
 
   return (
     <>
-      <div className="top-center big-size center-text smaller-font-size opaque-font-color">
+      <div
+        id="works-filter"
+        className="top-center big-size center-text smaller-font-size opaque-font-color"
+      >
         <select
           onChange={(e) => setWorkFilter(e.target.value)}
           value={workFilter || ""}

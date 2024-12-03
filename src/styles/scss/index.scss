@@ -121,8 +121,84 @@ textarea {
   margin: 10px auto;
 }
 
+#works-filter{
+  position: fixed;
+  width: auto;
+  margin: auto 0px auto auto;
+}
+
+#works-filter select{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.medium-text-size{
+  font-size: medium;
+}
+
+.auto-text-size{
+  font-size:100%;
+}
+
 footer {
   font-family: "Varela Round", sans-serif;
+}
+
+.burguer-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background: black;
+  width: 90%;
+
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+
+  @extend .flex-center;
+  @extend .direction-column;
+  transition: border-radius 0.5s ease;
+}
+
+.burguer-button{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 0;
+  z-index: 11;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid var(--color-contrast);
+  border-radius: 0px;
+
+  @extend .flex-center;
+  @extend .direction-column;
+  transition: border-radius 0.5s ease;
+}
+
+.burguer-button:hover{
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.burguer-button span{
+  display: block;
+  margin: auto;
+  width: 40%;
+  height:2px;
+  background-color: var(--color-contrast);
+  transition: width 0.5s ease;
+}
+
+.burguer-button:hover span{
+  width: 50%;
+
 }
 
 // Clases reutilizables
@@ -296,6 +372,18 @@ footer {
   aspect-ratio: 1/1;
 }
 
+select{
+  cursor: pointer;
+  background-color: var(--color-dark3);
+  height: 25px;
+  width: auto;
+  color: var(--color-contrast);
+
+  border: var(--border-style-solid) var(--border-color1)
+    var(--border-width-medium);
+  border-radius: var(--border-radius-medium);
+}
+
 .section-transparent {
   position: relative;
   z-index: 1;
@@ -365,7 +453,8 @@ footer {
   transition: border-radius 0.5s ease;
 }
 
-.content-Control .list {
+.content-Control .list,
+.burguer-menu .list {
   margin: 20px auto;
   width: 40%;
   text-align: center;
@@ -377,7 +466,8 @@ footer {
   @extend .small-radius;
 }
 
-.content-Control .list-Selected {
+.content-Control .list-Selected,
+.burguer-menu .list-Selected {
   margin: 20px auto;
   width: 40%;
   text-align: center;
@@ -387,7 +477,8 @@ footer {
   @extend .large-radius;
 }
 
-.content-Control .list:hover {
+.content-Control .list:hover,
+.burguer-menu .list:hover {
   text-align: center;
   border: double 4px var(--color-contrast);
   color: var(--color-contrast);

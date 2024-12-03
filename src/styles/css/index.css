@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Exo+2&family=Merriweather&family=Varela+Round&display=swap");
 :root {
-  --color-dark1: #8b8d5e;
-  --color-dark2: #c5a3a3;
-  --color-dark3: #3a64b6;
+  --color-dark1: #2c2c2c;
+  --color-dark2: #4a4a4a;
+  --color-dark3: #1b263b;
   --color-trans1: #ffffff1f;
   --color-trans2: #ff00001f;
   --color-trans3: #2bff001f;
@@ -22,7 +22,7 @@
   --border-color3: #495057;
   --text-link: #1e90ff;
   --text-highlight: #ffd700;
-  --text-muted: #90a3b4;
+  --text-muted: #6c757d;
 }
 
 /* Scrollbar Personalizado para Chrome, Safari y Edge */
@@ -58,12 +58,7 @@ html {
 }
 
 body {
-  background: radial-gradient(
-    circle at bottom left,
-    var(--color-dark3),
-    var(--border-color2),
-    var(--color-dark1)
-  );
+  background: radial-gradient(circle at bottom left, var(--color-dark3), var(--border-color2), var(--color-dark1));
   background-size: 200% 200%;
   background-attachment: fixed;
   color: var(--color-contrast);
@@ -78,8 +73,7 @@ body {
 main {
   height: 90vh;
   width: 90vw;
-  border: var(--border-style-solid) var(--border-color2)
-    var(--border-width-thick);
+  border: var(--border-style-solid) var(--border-color2) var(--border-width-thick);
   position: relative;
   align-items: center;
   justify-content: center;
@@ -112,101 +106,101 @@ textarea {
   margin: 10px auto;
 }
 
-select {
-  width: 50%;
-  padding: 10px;
-  margin: auto;
+#works-filter {
+  position: fixed;
+  width: auto;
+  margin: auto 0px auto auto;
+}
+
+#works-filter select {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.medium-text-size {
   font-size: medium;
-  text-align: center;
-  border-radius: var(--border-radius-medium);
-  border: var(--border-style-solid) var(--border-color1)
-    var(--border-width-thin);
-  background-color: var(--color-trans1);
-  color: var(--color-contrast);
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  appearance: none;
 }
 
-select:hover {
-  background-color: var(--color-trans2);
-  border-color: var(--color-contrast);
-}
-
-option {
-  background-color: var(--border-color1);
-  color: var(--color-contrast);
-  padding: 8px;
-  font-family: "Merriweather", serif;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-option:checked {
-  background-color: var(--color-dark3);
-  color: var(--color-contrast);
-}
-
-option:hover {
-  background-color: var(--color-dark2);
-  color: var(--color-contrast);
-}
-
-select:focus {
-  outline: none;
-  border-color: var(--color-contrast);
-  box-shadow: 0 0 5px var(--color-contrast);
+.auto-text-size {
+  font-size: 100%;
 }
 
 footer {
   font-family: "Varela Round", sans-serif;
 }
 
-.border-solid-medium,
-.section-transparent {
-  border: var(--border-style-solid) var(--border-color1)
-    var(--border-width-medium);
+.burguer-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background: black;
+  width: 90%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+  transition: border-radius 0.5s ease;
+}
+
+.burguer-button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 0;
+  z-index: 11;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-contrast);
+  border-radius: 0px;
+  transition: border-radius 0.5s ease;
+}
+
+.burguer-button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.burguer-button span {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 2px;
+  background-color: var(--color-contrast);
+  transition: width 0.5s ease;
+}
+
+.burguer-button:hover span {
+  width: 50%;
+}
+
+.border-solid-medium, .section-transparent {
+  border: var(--border-style-solid) var(--border-color1) var(--border-width-medium);
   border-radius: var(--border-radius-medium);
 }
 
-.box-shadow-inset,
-.section-transparent {
+.box-shadow-inset, .section-transparent {
   box-shadow: inset black 0px 0px 15px;
 }
 
-.background-radial,
-.section-transparent {
-  background: radial-gradient(
-    circle at bottom left,
-    var(--color-dark3),
-    var(--border-color2),
-    var(--color-dark1)
-  );
+.background-radial, .section-transparent {
+  background: radial-gradient(circle at bottom left, var(--color-dark3), var(--border-color2), var(--color-dark1));
   background-size: 100vw 100vh;
   background-position: 0 0;
 }
 
-.background-gradient-anim,
-.section-transparent,
-body,
-main {
+.background-gradient-anim, .section-transparent, body, main {
   animation: gradient-animation 20s ease infinite;
 }
 
-.flex-center,
-.project-item,
-.img-container,
-.content-Control {
+.flex-center, .project-item, .img-container, .content-Control, .burguer-menu, .burguer-button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.direction-column,
-.project-item,
-.projects-list,
-.content-Control,
-.section-transparent {
+.direction-column, .project-item, .projects-list, .content-Control, .section-transparent, .burguer-menu, .burguer-button {
   display: flex;
   flex-direction: column;
 }
@@ -216,8 +210,7 @@ main {
   flex-direction: column-reverse;
 }
 
-.direction-row,
-main {
+.direction-row, main {
   display: flex;
   flex-direction: row;
 }
@@ -265,9 +258,7 @@ main {
   height: auto;
 }
 
-.medium-size,
-.project-description,
-.content-Control {
+.medium-size, .project-description, .content-Control {
   width: 50%;
   height: auto;
 }
@@ -282,8 +273,8 @@ main {
   height: auto;
 }
 
-.small-radius,
-.content-Control .list {
+.small-radius, .content-Control .list,
+.burguer-menu .list {
   border-radius: var(--border-radius-small);
 }
 
@@ -291,8 +282,8 @@ main {
   border-radius: var(--border-radius-medium);
 }
 
-.large-radius,
-.content-Control .list-Selected {
+.large-radius, .content-Control .list-Selected,
+.burguer-menu .list-Selected {
   border-radius: var(--border-radius-large);
 }
 
@@ -356,6 +347,16 @@ main {
   aspect-ratio: 1/1;
 }
 
+select {
+  cursor: pointer;
+  background-color: var(--color-dark3);
+  height: 25px;
+  width: auto;
+  color: var(--color-contrast);
+  border: var(--border-style-solid) var(--border-color1) var(--border-width-medium);
+  border-radius: var(--border-radius-medium);
+}
+
 .section-transparent {
   position: relative;
   z-index: 1;
@@ -367,10 +368,6 @@ main {
 
 .min-width {
   min-width: 500px;
-}
-
-.pre-wrap {
-  white-space: pre-wrap;
 }
 
 .scroll-true {
@@ -419,7 +416,8 @@ main {
   transition: border-radius 0.5s ease;
 }
 
-.content-Control .list {
+.content-Control .list,
+.burguer-menu .list {
   margin: 20px auto;
   width: 40%;
   text-align: center;
@@ -429,7 +427,8 @@ main {
   transition: border-radius 0.5s ease;
 }
 
-.content-Control .list-Selected {
+.content-Control .list-Selected,
+.burguer-menu .list-Selected {
   margin: 20px auto;
   width: 40%;
   text-align: center;
@@ -438,7 +437,8 @@ main {
   transition: border-radius 0.5s ease;
 }
 
-.content-Control .list:hover {
+.content-Control .list:hover,
+.burguer-menu .list:hover {
   text-align: center;
   border: double 4px var(--color-contrast);
   color: var(--color-contrast);
@@ -449,34 +449,22 @@ main {
   height: min-content;
 }
 
-.floating-box,
-main {
+.floating-box, main {
   border-radius: var(--border-radius-medium);
   background-color: var(--color-trans1);
   box-shadow: black 0px 0px 25px;
 }
 
-.interactive,
-.project-name {
+.interactive, .project-name {
   cursor: pointer;
 }
 
-.interactive-text,
-.Linkedin,
-.Instagram,
-.WhatsApp,
-.FaceBook,
-.GitHub {
+.interactive-text, .Linkedin, .Instagram, .WhatsApp, .FaceBook, .GitHub {
   color: var(--text-muted);
   cursor: pointer;
 }
 
-.interactive-text:hover,
-.Linkedin:hover,
-.Instagram:hover,
-.WhatsApp:hover,
-.FaceBook:hover,
-.GitHub:hover {
+.interactive-text:hover, .Linkedin:hover, .Instagram:hover, .WhatsApp:hover, .FaceBook:hover, .GitHub:hover {
   color: var(--text-link);
 }
 
