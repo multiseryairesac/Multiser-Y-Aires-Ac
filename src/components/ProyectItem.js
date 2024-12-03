@@ -69,7 +69,7 @@ const ProjectItem = ({
 
           <div className="direction-row big-size center-center">
             <div className="section-transparent direction-column medium-size center-text smaller-font-size opaque-font-color">
-              <h3>Lenguajes </h3>
+              <h3>Tipo de trabajo</h3>
               <p>
                 {Object.entries(workType).map(([key, wt]) =>
                   key > 0 ? ", " + wt : wt
