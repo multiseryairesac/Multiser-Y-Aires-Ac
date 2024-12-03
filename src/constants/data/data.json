@@ -49,6 +49,31 @@
         "brand": ["LG", "Samsung"]
       },
       "contact": "3042549815"
+    },
+    "02":{
+      "work": "2",
+      "name": "Proyecto 2",
+      "images": [
+        {
+          "src": "https://drive.google.com/file/d/1uIh2dflFzLoXuY5os9y_4KPVx0y3bfEh/preview",
+          "alt": "descripcion de la imagen"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1pi_58QaNTzE0cmCPkrnNZiGBy_8sLmzB/preview",
+          "alt": "descripcion de la imagen numero dos"
+        }
+      ],
+      "media": {
+        "videoUrl": "https://drive.google.com/file/d/1CCj9VrY6zsTIed9buRMwXJgvhCBAx4gZ/preview",
+        "liveUrl": "https://www.google.com/maps/place/Cl.+69b+Sur+%2318h-44,+Bogot%C3%A1/@4.548253,-74.1516087,17z/data=!3m1!4b1!4m9!1m2!2m1!1sCl.+69b+Sur+%2318+h-44!3m5!1s0x8e3fa1e003706bb7:0xcc7909d547737f79!8m2!3d4.5482477!4d-74.1469953!15sChRDbC4gNjliIFN1ciAjMTggaC00NJIBEGdlb2NvZGVkX2FkZHJlc3PgAQA?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "description": "descripcion del trabajo en jeneral extenderse lo que sea necesario",
+      "status": "Terminado - Trabajando",
+      "technologies": {
+        "workType": ["tipo", "de", "trabajo"],
+        "brand": ["marcas", "de", "productos", "usados"]
+      },
+      "contact": "numero de whatsapp del contratista o vacio"
     }
   }
 }
