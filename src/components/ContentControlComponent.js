@@ -59,19 +59,28 @@ const ContentControlComponent = ({ currentWindow, setCurrentWindow }) => {
           isShowed={currentWindow === "devInfo"}
           text="Informacion Personal"
           className="medium-text-size"
-          action={() => setCurrentWindow("devInfo")}
+          action={() => {
+            setCurrentWindow("devInfo");
+            setShowBurguerMenu(false);
+          }}
         />
         <ControlButtonComponent
           isShowed={currentWindow === "projectsList"}
           text="Lista De Proyectos"
           className="medium-text-size"
-          action={() => setCurrentWindow("projectsList")}
+          action={() => {
+            setCurrentWindow("projectsList");
+            setShowBurguerMenu(false);
+          }}
         />
         <ControlButtonComponent
           isShowed={currentWindow === "Contact"}
           text="Contacto"
           className="medium-text-size"
-          action={() => setCurrentWindow("Contact")}
+          action={() => {
+            setCurrentWindow("Contact");
+            setShowBurguerMenu(false);
+          }}
         />
       </section>
 
