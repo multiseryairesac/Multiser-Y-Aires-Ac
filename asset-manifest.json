@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Multiser-Y-Aires-Ac/static/css/main.de3252ba.css",
-    "main.js": "/Multiser-Y-Aires-Ac/static/js/main.49df7ea8.js",
+    "main.js": "/Multiser-Y-Aires-Ac/static/js/main.dc8a08bb.js",
     "index.html": "/Multiser-Y-Aires-Ac/index.html",
     "main.de3252ba.css.map": "/Multiser-Y-Aires-Ac/static/css/main.de3252ba.css.map",
-    "main.49df7ea8.js.map": "/Multiser-Y-Aires-Ac/static/js/main.49df7ea8.js.map"
+    "main.dc8a08bb.js.map": "/Multiser-Y-Aires-Ac/static/js/main.dc8a08bb.js.map"
   },
   "entrypoints": [
     "static/css/main.de3252ba.css",
-    "static/js/main.49df7ea8.js"
+    "static/js/main.dc8a08bb.js"
   ]
 }
