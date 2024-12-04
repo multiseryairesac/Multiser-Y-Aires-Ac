@@ -61,7 +61,7 @@ const ContentControlComponent = ({ currentWindow, setCurrentWindow }) => {
           className="medium-text-size"
           action={() => {
             setCurrentWindow("devInfo");
-            setShowBurguerMenu(false);
+            if (currentSize < 950) setShowBurguerMenu(false);
           }}
         />
         <ControlButtonComponent
@@ -70,7 +70,7 @@ const ContentControlComponent = ({ currentWindow, setCurrentWindow }) => {
           className="medium-text-size"
           action={() => {
             setCurrentWindow("projectsList");
-            setShowBurguerMenu(false);
+            if (currentSize < 950) setShowBurguerMenu(false);
           }}
         />
         <ControlButtonComponent
@@ -79,7 +79,7 @@ const ContentControlComponent = ({ currentWindow, setCurrentWindow }) => {
           className="medium-text-size"
           action={() => {
             setCurrentWindow("Contact");
-            setShowBurguerMenu(false);
+            if (currentSize < 950) setShowBurguerMenu(false);
           }}
         />
       </section>
